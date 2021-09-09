@@ -1,0 +1,15 @@
+<div class="row mt-4">
+  <div class="col">
+    <h2 class="p-3">Cinta Coding</h2>
+  </div>
+  <div class="col d-flex justify-content-end">
+    <a href="/login" class="text-decoration-none" *ngIf="!authorized; else helloUsername">
+      <div class="btn btn-primary rounded-pill d-flex align-items-center px-5">
+        <h3>Login</h3>
+      </div>
+    </a>
+    <ng-template #helloUsername>
+      <h3>Welcome, <span class="text-primary">Username</span></h3>
+    </ng-template>
+  </div>
+</div>
